@@ -1,7 +1,8 @@
 {
   "inbounds": [
     {
-      "port": 8080,
+      "port": 0,
+      "listen": "0.0.0.0",
       "protocol": "trojan",
       "settings": {
         "clients": [
@@ -9,13 +10,12 @@
             "password": "t.me/goldenhamzanet",
             "level": 0
           }
-        ],
-        "decryption": "none"
+        ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "hamza-grpc"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/t.me/goldenhamzanet"
         }
       }
     }
